@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t mckenziet/docker-react -f Dockerfile.dev .
+  - docker build -t mckenzit/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true mckenziet/docker-react npm run test
+  - docker run -e CI=true mckenzit/docker-react npm run test
